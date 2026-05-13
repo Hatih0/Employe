@@ -268,3 +268,221 @@ DEBUG - 2026-05-13 06:55:49 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-05-13 06:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-05-13 06:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-05-13 06:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:25:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/index', [], true)
+ 4 APPPATH\Controllers\Departements.php(31): view('departements/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:25:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/create', [], true)
+ 4 APPPATH\Controllers\Departements.php(61): view('departements/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:26:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/index', [], true)
+ 4 APPPATH\Controllers\Departements.php(31): view('departements/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:26:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/index', [], true)
+ 4 APPPATH\Controllers\Departements.php(31): view('departements/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:26:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/create', [], true)
+ 4 APPPATH\Controllers\Departements.php(61): view('departements/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:26:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/create', [], true)
+ 4 APPPATH\Controllers\Departements.php(61): view('departements/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:28:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/create', [], true)
+ 4 APPPATH\Controllers\Departements.php(61): view('departements/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 07:28:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/base.php"
+[Method: GET, Route: departements/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/base', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('departements/create', [], true)
+ 4 APPPATH\Controllers\Departements.php(61): view('departements/create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Departements->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departements))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:45:15 --> table employes has no column named created_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :password:, :role:, :departement_id:, :date_embauche:, :actif:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\EmployeModel.php(53): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Employes.php(105): App\Models\EmployeModel->createEmploye([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Employes->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employes))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+CRITICAL - 2026-05-13 07:45:15 --> CodeIgniter\Database\Exceptions\DatabaseException: table employes has no column named created_at
+[Method: POST, Route: employes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :password:, :role:, :departement_id:, :date_embauche:, :actif:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\EmployeModel.php(53): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Employes.php(105): App\Models\EmployeModel->createEmploye([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Employes->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employes))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+CRITICAL - 2026-05-13 07:45:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: table employes has no column named created_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :password:, :role:, :departement_id:, :date_embauche:, :actif:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\EmployeModel.php(53): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Employes.php(105): App\Models\EmployeModel->createEmploye([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Employes->store()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employes))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+CRITICAL - 2026-05-13 07:45:15 --> [Caused by] Exception: table employes has no column named created_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (\'Messi\', \'Lionel\', \'lionelmessi@gmail.com\', \'$2y$10$BAzcxTm7JCCjuQAMcDQNge66jxb1Yp7mvWy1/Xk0/ThahE2vnLAna\', \'Employé\', \'1\', \'2026-05-01\', \'1\', \'2026-05-13 07:45:15\', \'2026-05-13 07:45:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employes` (`nom`, `prenom`, `email`, `password`, `role`, `departement_id`, `date_embauche`, `actif`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :password:, :role:, :departement_id:, :date_embauche:, :actif:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\EmployeModel.php(53): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Employes.php(105): App\Models\EmployeModel->createEmploye([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Employes->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employes))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 ROOTPATH\router.php(13): require_once('F:\\Employe\\public\\index.php')
+DEBUG - 2026-05-13 07:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -8,7 +8,7 @@ class EmployeModel extends Model
     protected $table = 'employes';
     protected $primaryKey = 'id';
     protected $returnType = 'array';
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     protected $allowedFields = [
         'nom',
         'prenom',
@@ -34,4 +34,36 @@ class EmployeModel extends Model
         return null; 
     }
 
+    public function getAllEmployes()
+    {
+        return $this->findAll();
+    }
+
+    public function getEmployeById($id)
+    {
+        return $this->find($id);
+    }
+
+    public function createEmploye($data)
+    {
+        // Hash the password if provided
+        if (isset($data['password'])) {
+            $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+        }
+        return $this->insert($data);
+    }
+
+    public function updateEmploye($id, $data)
+    {
+        // Hash the password if provided
+        if (isset($data['password'])) {
+            $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+        }
+        return $this->update($id, $data);
+    }
+
+    public function deleteEmploye($id)
+    {
+        return $this->delete($id);
+    }
 }
