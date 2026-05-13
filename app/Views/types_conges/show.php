@@ -19,6 +19,9 @@ $this->section('content');
                 <dt class="col-sm-3">ID:</dt>
                 <dd class="col-sm-9"><?= esc($typeConge['id']) ?></dd>
 
+                <dt class="col-sm-3">Libellé:</dt>
+                <dd class="col-sm-9"><?= esc($typeConge['libelle'] ?? '-') ?></dd>
+
                 <dt class="col-sm-3">Jours Annuels:</dt>
                 <dd class="col-sm-9"><?= esc($typeConge['jours_annuels']) ?> jours</dd>
 

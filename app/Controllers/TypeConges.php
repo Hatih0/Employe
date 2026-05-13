@@ -56,10 +56,15 @@ class TypeConges extends BaseController
     // ========== SAUVEGARDER UN NOUVEAU TYPE DE CONGÉ ==========
     public function store()
     {
+        $libelle = trim((string) $this->request->getPost('libelle'));
         $jours_annuels = $this->request->getPost('jours_annuels');
         $deductible = $this->request->getPost('deductible') ?? '1';
 
         // Validations
+        if ($libelle === '') {
+            return redirect()->back()->withInput()->with('error', 'Le libellé est obligatoire');
+        }
+
         if (empty($jours_annuels)) {
             return redirect()->back()->withInput()->with('error', 'Le nombre de jours annuels est obligatoire');
         }
@@ -69,6 +74,7 @@ class TypeConges extends BaseController
         }
 
         $data = [
+            'libelle'       => $libelle,
             'jours_annuels' => $jours_annuels,
             'deductible'    => $deductible,
         ];
@@ -108,10 +114,15 @@ class TypeConges extends BaseController
             return redirect()->to('/types-conges')->with('error', 'Type de congé introuvable');
         }
 
+        $libelle = trim((string) $this->request->getPost('libelle'));
         $jours_annuels = $this->request->getPost('jours_annuels');
         $deductible = $this->request->getPost('deductible') ?? '1';
 
         // Validations
+        if ($libelle === '') {
+            return redirect()->back()->withInput()->with('error', 'Le libellé est obligatoire');
+        }
+
         if (empty($jours_annuels)) {
             return redirect()->back()->withInput()->with('error', 'Le nombre de jours annuels est obligatoire');
         }
@@ -121,6 +132,7 @@ class TypeConges extends BaseController
         }
 
         $data = [
+            'libelle'       => $libelle,
             'jours_annuels' => $jours_annuels,
             'deductible'    => $deductible,
         ];

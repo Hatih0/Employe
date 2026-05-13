@@ -1,34 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php $this->extend('layouts/base'); $this->section('content'); ?>
 
+<div class="form-section">
+    <h3>Nouvelle demande de congé</h3>
     <form action="/envoyerDemande" method="post">
-
-        <label for="TypeConge">Type de congé:</label>
-        <select id="TypeConge" name="TypeConge" required>
-            <option value="">Sélectionnez un type</option>
-            <?php foreach ($allTypesConge as $typeConge): ?>
-                <option value="<?= $typeConge['id'] ?>"><?= $typeConge['libelle'] ?></option>
-            <?php endforeach; ?>
-        </select><br><br>
-
-        <label for="start_date">Date de début:</label>
-        <input type="date" id="start_date" name="start_date" required><br><br>
-
-        <label for="end_date">Date de fin:</label>
-        <input type="date" id="end_date" name="end_date" required><br><br>
-
-        <label for="motif"> Motif </label>
-        <textarea name="motif" id=""></textarea>
-
-        <button type="submit">Demander le congé</button>
-
+        <div class="form-grid-2">
+            <div class="f-group">
+                <label for="TypeConge" class="f-label">Type de congé *</label>
+                <select id="TypeConge" name="TypeConge" class="f-select" required>
+                    <option value="">Sélectionnez un type</option>
+                    <?php foreach ($allTypesConge as $typeConge): ?>
+                        <option value="<?= esc($typeConge['id']) ?>"><?= esc($typeConge['libelle']) ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <div class="f-group">
+                <label for="start_date" class="f-label">Date de début *</label>
+                <input type="date" id="start_date" name="start_date" class="f-input" required>
+            </div>
+            <div class="f-group">
+                <label for="end_date" class="f-label">Date de fin *</label>
+                <input type="date" id="end_date" name="end_date" class="f-input" required>
+            </div>
+            <div class="f-group">
+                <label for="motif" class="f-label">Motif</label>
+                <textarea name="motif" id="motif" class="f-textarea" placeholder="Précisez le motif si nécessaire"></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn-forest">Demander le congé</button>
+            <a href="/dashboard" class="btn-secondary">Annuler</a>
+        </div>
     </form>
+</div>
 
-</body>
-</html>
+<?php $this->endSection(); ?>

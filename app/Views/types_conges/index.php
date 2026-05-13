@@ -30,6 +30,7 @@ $this->section('content');
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Libellé</th>
                             <th>Jours Annuels</th>
                             <th>Déductible</th>
                             <th>Actions</th>
@@ -39,6 +40,7 @@ $this->section('content');
                         <?php foreach ($typeConges as $type): ?>
                             <tr>
                                 <td><?= esc($type['id']) ?></td>
+                                <td><?= esc($type['libelle'] ?? '-') ?></td>
                                 <td><?= esc($type['jours_annuels']) ?> jours</td>
                                 <td>
                                     <span class="badge bg-<?= $type['deductible'] ? 'success' : 'warning' ?>">

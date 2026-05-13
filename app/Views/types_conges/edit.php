@@ -23,6 +23,12 @@ $this->section('content');
                 <?= csrf_field() ?>
 
                 <div class="mb-3">
+                    <label for="libelle" class="form-label">Libellé *</label>
+                    <input type="text" class="form-control" id="libelle" name="libelle"
+                           value="<?= old('libelle', esc($typeConge['libelle'])) ?>" required>
+                </div>
+
+                <div class="mb-3">
                     <label for="jours_annuels" class="form-label">Nombre de jours annuels *</label>
                     <input type="number" class="form-control" id="jours_annuels" name="jours_annuels" 
                            value="<?= old('jours_annuels', esc($typeConge['jours_annuels'])) ?>" min="1" required>

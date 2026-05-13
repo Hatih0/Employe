@@ -24,16 +24,7 @@ class EmployeController extends BaseController
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        if ($email == "user@example.com" && $password == "user123") {
-            session()->set([
-                'user_id'      => 1, 
-                'email'          => $email,
-                'is_logged_in' => true,
-            ]);
-            return redirect()->to('/dashboard');
-        }
-
-      $user = $this->employeModel->checkEmploye($email, $password);
+        $user = $this->employeModel->checkEmploye($email, $password);
 
         if (!$user) {
             return redirect()->back()
@@ -42,11 +33,28 @@ class EmployeController extends BaseController
 
         session()->set([
             'user_id'      => $user['id'],
-            'email'          => $user['email'],
+            'email'        => $user['email'],
+            'nom'          => $user['nom'],
+            'prenom'       => $user['prenom'],
+            'role'         => strtolower($user['role']),
             'is_logged_in' => true,
         ]);
 
-        return redirect()->to('/dashboard');
+        // Redirection selon le rôle
+        $role = strtolower($user['role']);
+        if ($role === 'rh') {
+            return redirect()->to('/rh/demandes');
+        } elseif ($role === 'admin') {
+            return redirect()->to('/admin/dashboard');
+        } else {
+            return redirect()->to('/dashboard');
+        }
+    }
+    
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/')->with('success', 'Vous êtes déconnecté avec succès.');
     }
 
 }

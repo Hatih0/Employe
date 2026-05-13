@@ -10,7 +10,7 @@ class TypeCongeModel extends Model
     protected $primaryKey       = 'id';
     protected $returnType       = 'array';
     protected $useTimestamps    = false;
-    protected $allowedFields    = ['jours_annuels', 'deductible'];
+    protected $allowedFields    = ['libelle', 'jours_annuels', 'deductible'];
     protected $skipValidation   = true;
 
     public function getAllTypeConges()

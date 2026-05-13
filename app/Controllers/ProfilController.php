@@ -66,9 +66,13 @@ class ProfilController extends BaseController
             'email' => $email,
         ];
 
-        if ($this->employeModel->update($employeId, $data)) {
-            // Mettre à jour l'email en session si modifié
-            session()->set(['email' => $email]);
+        if ($this->employeModel->skipValidation(true)->update($employeId, $data)) {
+            // Garder l'entête et le profil cohérents après modification
+            session()->set([
+                'nom' => $nom,
+                'prenom' => $prenom,
+                'email' => $email,
+            ]);
             return redirect()->to('/profil')
                 ->with('success', 'Votre profil a été mis à jour avec succès.');
         }
