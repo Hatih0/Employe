@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1> tableau de bord Employée </h1>
+
+    <a href="/demanderConge">Demander un congé</a>
+    <a href="/MesDemandes"> Mes demande </a>
+
+    <p> congee restant </p>
+
 </body>
 </html>
