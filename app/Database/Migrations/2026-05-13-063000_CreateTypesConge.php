@@ -15,6 +15,11 @@ class CreateTypesConge extends Migration
                 'auto_increment' => true,
             ],
 
+            'libelle' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 255,
+            ],
+
             'jours_annuels' => [
                 'type' => 'INTEGER',
             ],

@@ -13,7 +13,6 @@ CREATE TABLE employes (
     date_embauche DATE,
     actif ENUM('1', '0') NOT NULL,
     FOREIGN KEY (departement_id) REFERENCES departements(id)
-
 );
 
 CREATE TABLE departements (
