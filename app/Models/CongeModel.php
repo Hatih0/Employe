@@ -65,13 +65,16 @@ class CongeModel extends Model
 
         $result = $this->update($id, $data);
 
-        // Si approbation, mettre à jour le solde
+        // Si approbation, mettre à jour le solde en incrémentant jours_pris
         if ($result && $statut === 'approuve') {
-            $anneeActuelle = date('Y');
+            // Extraire l'année de la date_debut du congé
+            $annee = (int)date('Y', strtotime($conge['date_debut']));
+            
+            // Incrémenter jours_pris avec nb_jours
             $this->soldeModel->updateSolde(
                 $conge['employe_id'],
                 $conge['type_conge_id'],
-                $anneeActuelle,
+                $annee,
                 $conge['nb_jours']
             );
         }
@@ -88,7 +91,37 @@ class CongeModel extends Model
     // ========== CREER UNE DEMANDE DE CONGE ==========
     public function demanderConge(array $data): int|false
     {
-        return $this->insert($data);
+        // Insérer la demande de congé
+        $result = $this->insert($data);
+        
+        if ($result) {
+            // Récupérer l'année de la date_debut
+            $annee = (int)date('Y', strtotime($data['date_debut']));
+            
+            // Vérifier si un solde existe pour cet employé/type_conge/année
+            $soldeExistant = $this->soldeModel->getSoldeEmploye(
+                $data['employe_id'],
+                $data['type_conge_id'],
+                $annee
+            );
+            
+            // Si le solde n'existe pas, le créer avec jours_attribues = jours_annuels du type
+            if (!$soldeExistant) {
+                $typeCongeModel = new TypeCongeModel();
+                $typeCong = $typeCongeModel->find($data['type_conge_id']);
+                
+                if ($typeCong) {
+                    $this->soldeModel->creerSolde(
+                        $data['employe_id'],
+                        $data['type_conge_id'],
+                        $annee,
+                        $typeCong['jours_annuels']
+                    );
+                }
+            }
+        }
+        
+        return $result;
     }
 
     // ========== METTRE A JOUR UN CONGE ==========
