@@ -25,23 +25,16 @@ class CongeModel extends Model
 
     public function getCongesByEmployeId(int $employeId): array
     {
-        return $this->where('employe_id', $employeId)->findAll();
+        return $this->select('conges.*, types_conge.libelle as type_conge')
+            ->join('types_conge', 'conges.type_conge_id = types_conge.id')
+            ->where('conges.employe_id', $employeId)
+            ->findAll();
     }
 
     public function insertConge(array $data): int
     {
         $this->insert($data);
         return $this->getInsertID();
-    }
-
-    public function delete(int $id): bool
-    {
-        return $this->delete($id);
-    }
-
-    public function find(int $id): ?array
-    {
-        return $this->where('id', $id)->first();
     }
 
 }

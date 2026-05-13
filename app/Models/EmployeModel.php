@@ -28,7 +28,7 @@ class EmployeModel extends Model
     public function checkEmploye(string $email, string $password): ?array
     {
         $user = $this->where('email', $email)->first();
-        if ($user && password_verify($password, $user['password'])) {
+        if ($user && $user['password'] === $password) {
             return $user;
         }
         return null; 

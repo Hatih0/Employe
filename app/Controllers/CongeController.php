@@ -101,7 +101,7 @@ class CongeController extends BaseController
 
         $this->congeModel->delete($id);
 
-        return redirect()->to('/MesDemandes')
+        return redirect()->back()
             ->with('success', 'Votre demande de congé a été annulée avec succès.');
     }
 

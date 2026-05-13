@@ -21,12 +21,12 @@
 
         <?php foreach ($demandes as $demande): ?>
             <tr>
-                <td><?= $demande['type_conge'] ?></td>
-                <td><?= $demande['start_date'] ?></td>
-                <td><?= $demande['end_date'] ?></td>
-                <td><?= $demande['motif'] ?></td>
-                <td><?= $demande['statut'] ?></td>
-                <td><?= isset($demande['commentaire_rh']) ? $demande['commentaire_rh'] : '-' ?></td>
+                <td><?= htmlspecialchars($demande['type_conge']) ?></td>
+                <td><?= htmlspecialchars($demande['date_debut']) ?></td>
+                <td><?= htmlspecialchars($demande['date_fin']) ?></td>
+                <td><?= htmlspecialchars($demande['motif'] ?? '-') ?></td>
+                <td><?= htmlspecialchars($demande['statut']) ?></td>
+                <td><?= htmlspecialchars($demande['commentaire_rh'] ?? '-') ?></td>
                 <?php if ($demande['statut'] === 'en_attente'): ?>
                 <td>
                     <a href="/supprimerDemande/<?= $demande['id'] ?>">Annuler</a>

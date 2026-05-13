@@ -4,13 +4,16 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 
 use App\Models\CongeModel;
+use App\Models\SoldeModel;
 
 class DashboardEmployeController extends BaseController
 {
     private $congeModel;
+    private $soldeModel;
 
     public function __construct()
     {
+        $this->soldeModel = new SoldeModel();
         $this->congeModel = new CongeModel();
     }
 
@@ -21,7 +24,9 @@ class DashboardEmployeController extends BaseController
                 ->with('error', 'Vous devez être connecté pour accéder à cette page.');
         }
 
-        return view('employe/dashboard/dashboard');
+        $solde = $this->soldeModel->getSoldeByEmployeIdAndTypeCongeId(session()->get('user_id'), 1);
+
+        return view('employe/dashboard/dashboard', ['solde' => $solde]);
     }
 
     public function MesDemandes()
@@ -31,7 +36,7 @@ class DashboardEmployeController extends BaseController
                 ->with('error', 'Vous devez être connecté pour accéder à cette page.');
         }
 
-        $demandeEmployee = $this->congeModel->getCongesByEmployeId(session()->get('employe_id'));
+        $demandeEmployee = $this->congeModel->getCongesByEmployeId(session()->get('user_id'));
         return view('employe/MesDemandes/MesDemande', ['demandes' => $demandeEmployee]);
 
     }
